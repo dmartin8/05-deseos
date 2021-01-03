@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
+  // para trabajo en navegador, IonicModule(dice los elemenos ionic), y AppRouting para las rutas
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
     StatusBar,

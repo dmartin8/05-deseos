@@ -18,14 +18,14 @@
 
     </ion-list>
     <ion-list>
-        <ion-list-header>
+        <ion-list-header *ngIf="lista.items.length > 0">
             <ion-label>
                 Tareas por hacer
             </ion-label>
         </ion-list-header>
         <!-- Para ver los items de la lista: -->
 
-        <ion-item-sliding *ngFor="let item of lista.items; let i = index" class="animated fadeInDown">
+        <ion-item-sliding *ngFor="let item of lista.items; let i = index" class="">
             <ion-item>
                 <ion-checkbox slot="start" color="tertiary" [(ngModel)]="item.completado" (ionChange)="cambioCheck( item )"></ion-checkbox>
                 <ion-label>{{ item.desc }}</ion-label>
