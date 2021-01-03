@@ -8,7 +8,8 @@ const routes: Routes = [
     component: Tab1Page,
   },
   {
-    path: 'agregar',
+    // Path que nos llevará a donde editar la lista que anyadimos
+    path: 'agregar/:listaId',
     loadChildren: () => import('../../pages/agregar/agregar.module').then( m => m.AgregarPageModule)
   }
 ];
