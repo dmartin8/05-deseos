@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header no-border>
     <ion-toolbar color="light">
         <ion-title>
             Pendientes
@@ -8,7 +8,7 @@
 
 <ion-content color="dark" color="light">
 
-    <app-listas></app-listas>
+    <app-listas [terminada]="false"></app-listas>
     <!-- Me llevo la logica de listas que hicimos a listas.component.html -->
 
     <ion-fab vertical="bottom" horizontal="end" slot="fixed">
